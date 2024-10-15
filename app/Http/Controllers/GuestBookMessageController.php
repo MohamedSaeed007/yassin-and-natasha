@@ -8,10 +8,10 @@ use App\Models\GuestBookMessage;
 
 class GuestBookMessageController extends Controller
 {
-//    public function index()
-//    {
-//        return GuestBookMessageResource::collection(GuestBookMessage::all());
-//    }
+    public function index()
+    {
+        return GuestBookMessageResource::collection(GuestBookMessage::all());
+    }
 
     public function store(GuestBookMessageRequest $request)
     {
